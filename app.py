@@ -1,7 +1,7 @@
 from flask import Flask, render_template, send_from_directory
 import rap
 
-def create_app(config_name):
+def create_app():
     app = Flask(__name__, static_url_path='')
     rap.init()
 
